@@ -1,0 +1,1 @@
+<h1 id="onderwerp">preken</h1><div id ="koptekst" class="tekst1"><p>preken afluisteren kan hier straks</p></div><a class="info" href="artikel1.html" onclick="loadXMLDoc('./index.php?content'); return false ">Meer info ...</a> <br/><div id="tekst" class="tekst1"><p>help Artikel tekst.</p></div>

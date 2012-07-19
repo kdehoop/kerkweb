@@ -1,0 +1,93 @@
+<?php
+// bepaal de locatie van de config files 
+$l_sLocatieKalenderFiles = './site/media/kalender/';
+
+// bepaal welke kalenderitems er zijn.
+$l_AFiles	= $l_oReadDir->getFileNamesDirectory($l_sLocatieKalenderFiles, 'kalender');
+$l_oString 	= new stringSys;
+$num = 0;
+
+
+foreach ($l_AFiles as $val1){
+	$num++;
+   if($val1 <> '.' && $val1 <> '..' && $val1 <> 'kalenderini.xml'){
+		$l_xmlResult	= simplexml_load_file( $l_sLocatieKalenderFiles.$val1 );
+		$l_sOnderwerp 	= $l_xmlResult->onderwerp;
+		$l_dDatum 		= $l_xmlResult->begindatum;
+		$l_sOndwStart	= $l_xmlResult->begintijd; 
+		$l_sfile		= $l_xmlResult->file;
+		$l_scategorie	= $l_xmlResult->kal_categorie; 
+		$l_scontentcel	= $l_xmlResult->kal_contentcel;
+      $aactieLijst[]  = array("onderwerp"=>trim($l_sOnderwerp.''),"startdatum"=>trim($l_dDatum.''),"begintijd"=>trim($l_sOndwStart.''),"file"=>trim($l_sfile.""),"categorie"=>trim($l_scategorie.''),"contentcel"=>trim($l_scontentcel.'')); 
+           
+	}	
+}
+foreach ($aactieLijst as $key => $row) {
+    $datum[$key]  = $row['startdatum'];
+    $tijd[$key]   = $row['begintijd'];
+}
+array_multisort($datum, SORT_ASC, $tijd, SORT_ASC  ,$aactieLijst) ;
+//logRegel($aactieLijst, __FILE__ . __LINE__);
+$outputItem = '
+	<h1>Activiteiten</h1>
+	<div class="kalblok"> <table classe ="kaltable">';
+$l_lSetFocus 	= 'Y';
+
+foreach ($aactieLijst as $key => $value) {
+   $l_scategorie 	= $value['categorie'];
+   $l_sOndwStart 	= $value['begintijd'];
+   $l_sOnderwerp 	= stripslashes($value['onderwerp']);
+   $l_dDatum 		= $value['startdatum'];
+   $l_scontentcel = $value['contentcel'];
+   $l_sFileA      = $value['file'];
+   $idFocus 		= '';
+   $dispDate		= substr($l_dDatum, 6, $length = 2) .'-' . substr($l_dDatum, 4, $length = 2). '-' . substr($l_dDatum, 0, $length = 4);
+   $datum = date("Ymd", mktime(0, 0, 0, date("m"), date("d") - 7, date("Y")));
+  // logRegel($datum . '--' . $l_dDatum, __FILE__ . __LINE__);
+   $test = date("Ymd");
+   if ($l_dDatum >= $datum) {
+     $outputItem = $outputItem .
+		'<tr>
+        	<td class = "' .$l_scategorie  . '" >'. $l_sOndwStart . '</td>
+        	<td ' . 'class = "' .$l_scontentcel . '" > <a '. $idFocus . ' class="kallink"  href="frontpagina.html" onclick="loadXMLDoc(' . "'./index.php?module=pagina&content=kalendercontent.html&id=". $l_sFileA . "'" . '); return false ">'. $l_sOnderwerp . '<br>' . $dispDate . '</a></td>
+        </tr>';
+   }
+ }
+$outputItem = $outputItem . '</table> </div>';
+
+
+
+
+
+
+
+/** rsort($l_AFiles);
+foreach ($l_AFiles as $val1){
+	$days = (strtotime(substr($val1,8, 8)) - strtotime(date("Y-m-d"))) / (60 * 60 * 24);
+	if($val1 <> '.' && $val1 <> '..'){
+		$l_xmlResult	= simplexml_load_file($l_sLocatieKalenderFiles.$val1 );
+		$l_sOnderwerp 	= $l_xmlResult->onderwerp;
+		$l_dDatum 		= $l_xmlResult->begindatum;
+		$l_sOndwStart	= $l_xmlResult->begintijd; 
+		$l_sfile		= $l_xmlResult->file;
+		$l_scategorie	= $l_xmlResult->kal_categorie; 
+		$l_scontentcel	= $l_xmlResult->kal_contentcel;
+		
+		// format tekst voor scherm
+		if($l_lSetFocus=='Y' && $days < 0){
+			$idFocus = 'id="calcFocus"' ;
+		 	$l_lSetFocus = 'N';
+		} else {
+			$idFocus ='';
+		}
+		$outputItem 	=  $outputItem .
+		'<tr>
+        	<td class = "' .$l_scategorie  . '" >'. $l_sOndwStart . '</td>
+        	<td ' . 'class = "' .$l_scontentcel . '" > <a '. $idFocus . ' class="kallink"  href="frontpagina.html" onclick="loadXMLDoc(' . "'./index.php?module=pagina&content=kalendercontent.html&id=". $l_sfile . "'" . '); return false ">'. $l_sOnderwerp . '<br>' . $l_dDatum . '</a></td>
+        </tr>';
+	}	
+}
+$outputItem = $outputItem . '</table> </div>'; 
+*/
+
+?>

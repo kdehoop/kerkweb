@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+	<onderwerp>Verkoop collectebonnen</onderwerp>
+	<beschrijving>Vanavond is er gelegenheid om collectebonnen aan te schaffen</beschrijving>
+	<locatie>Ichthuskerk en de Ofel</locatie>
+	<begintijd>19:30</begintijd>
+	<eindtijd>20:00</eindtijd>
+	<begindatum>20120518</begindatum>
+    <einddatum>20120518</einddatum>
+	<kal_categorie>gehele_gemeente</kal_categorie>
+	<kal_contentcel>kaldefault</kal_contentcel> 
+	<contactpersoon></contactpersoon>
+	<telefoon>nb</telefoon>
+	<email>website</email>
+	<soort></soort>
+	<plaatsing></plaatsing>
+	<hits>0</hits>
+	<gemaakt></gemaakt>
+	<gemaaktop></gemaaktop>
+	<gewijzig></gewijzig>
+	<gewijzigdop></gewijzigdop>
+	<extern></extern>
+	<file>kalender20120508_249.xml</file>
+<tijd></tijd></event>

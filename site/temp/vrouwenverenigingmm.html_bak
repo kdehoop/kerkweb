@@ -1,0 +1,5 @@
+<h1 id="onderwerp">Vrouwen Vereniging Maria Martha</h1><div id ="koptekst" class="tekst1"><p>
+	Vrouwenvereniging Maria Martha uit Reeuwijk-Dorp komt elke twee weken op woensdagavond bij elkaar in De Ofel. test</p>
+</div><a class="info" href="artikel1.html" onclick="loadXMLDoc('./index.php?content'); return false ">Meer info ...</a> <br/><div id="tekst" class="tekst1"><p>
+	De avonden beginnen om 19.45 uur. Als u wilt weten wanneer de vereniging samenkomt, dan kunt u hiervoor de agenda op de website of in de kerkbode raadplegen. Contactpersoon is mevr. A. Heij-Sloof (0182 - 39 45 34).</p>
+</div>

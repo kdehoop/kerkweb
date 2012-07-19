@@ -1,0 +1,22 @@
+<?php 
+	$tekst = str_replace('--', '</br>', $l_aPaginaIni['description']);
+	$outputItem =  '<a href="'. $l_aPaginaIni['item'] . '" ><h1>' . $l_aPaginaIni['onderwerp'] . "</h1></a>" .  
+	'<div id ="koptekst" class="tekst1"> ' .  $tekst . '</div>
+	 <div id="tekst"> </div>';		
+
+if(isset($l_sItemContentNaam)){      
+$l_sDataHtml= '<form id="editcontent" action="./login.php" method="post" name="'. $l_sItemContentNaam . '">' .  		
+				  'Menu tekst <input type"text" name="menutekst" value="'. $g_aModule['menutekst'] . '" /> <br/>' .
+				  '<input type="hidden" name="content" value="'. $l_sItemContentNaam . '" />'.
+				  'Onderwerp <input type="text" name="onderwerp" value="'. $g_aModule['onderwerp'] . '" /><br/>'.
+				  'Site link van RSS <input type="text" name="sitelink" value="'. $g_aModule['sitelink'] . '" /><br/>'.
+				  'RSS Link <input type="text" name="rsslink" value="'. $g_aModule['rsslink'] . '" /><br/>' .	
+				  '<br/><br/><br/> 
+				  <br/> <input  name="editform"  onclick="loadJSxml(' . "'./login.php' , '#editcontent')" . "; return false " . '" type="button" value="Wijziging opslaan" />
+				  <input type="hidden" name="editform" value="Wijziging opslaan" /> 
+			   </form>';
+}			     
+?>    
+
+	
+

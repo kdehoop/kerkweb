@@ -1,0 +1,2 @@
+<h1 id="onderwerp">Gemeente informatie</h1><div id ="koptekst" class="tekst1"><p>In deze rubriek vind u diverse informatie over onze gemeente</p>
+<p>Informatie over onze vereningingen vind u elkders op de iste</p></div><a class="info" href="artikel1.html" onclick="loadXMLDoc('./index.php?content'); return false ">Meer info ...</a> <br/><div id="tekst" class="tekst1"></div>

@@ -1,0 +1,17 @@
+<?php
+$l_aPaginaIniMenu = $l_oStart->getPageIniMenu($l_sLokatie);
+	$outputItem ="<h1>" .$l_sOnderwerp. '</h1>
+		<div id ="koptekst">
+	<ul >'
+	;
+	sort($l_aPaginaIniMenu);
+	foreach($l_aPaginaIniMenu as $key=>$val){
+		$l_sContent 	= $val['Locatie'];
+		$l_sMenuTekst 	= $val['menutekst'];
+										 
+		$outputItem		= $outputItem . '<li class="mlist"><a class="mlistd" href="' . $l_sContent . '" onclick="loadXMLDoc(' . "'./index.php?module=pagina&content=" . $l_sContent . "'); return false " . '">' . $l_sMenuTekst . '</a></li>'; 
+	}
+	
+	$outputItem = $outputItem . "	</ul>	
+</div>"; 
+?>

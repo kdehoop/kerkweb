@@ -1,0 +1,81 @@
+<h1> Plaats een activiteit</h1>
+	<div id ="koptekst" class="tekst1">
+		Wilt u een gemeente activiteit melden voor de website? Dat kan met het onderstaande formulier.</br>
+        Na het verzenden van de nieuwe activiteit ontvangt de webredacteur een email.
+        De webredacteur neemt de mail in behandeling. Indien de activiteit inorde is wordt deze getoond op de website.
+        </br>
+		
+	</div>
+<div>
+	</br>
+	<div id="formulier">
+      <!--script type="text/javascript" >
+        $("#datum1").datepicker({ dateFormat: 'dd-mm-yy' });
+        $("#datum2").datepicker({ dateFormat: 'dd-mm-yy' });
+      </script-->
+      <form id="editcontent" action="./admin.php" method="post">
+        <div id="mailform1">
+          <p><h1>Activiteit</h1></p>
+        <input type="hidden" name="page" value="addActiviteit.html" />
+        <!--input type="hidden" name="module" value="activiteit" /-->
+        <!--input type="hidden" name="methode" value="receiveform" /-->
+        <table>
+          <tr><td>Onderwerp</td><td><input id="onderwerp" type="text" size="59" name="onderwerp" value="[@onderwerp]" /></td>
+          </tr><tr><td>Beschrijving</td><td></td></tr>
+          <tr>
+            <td></td>
+            <td>
+              <textarea id="beschrijving" class="tekst1" name="beschrijving" cols="50" rows="15" >[@beschrijving]</textarea> 
+            </td>
+          </tr>
+          <tr><td>Locatie</td><td><input id="locatie" type="text" size="59"  name="locatie" value="[@locatie]" /></td></tr>
+          <tr><td>Start datum</td><td><input onfocus="datum()" id="datum1" onkeyup="dateMask(this.id)" type="text" name="begindatum" value="[@startdatum]" placeholder="dd-mm-jjjj"/ >dd-mm-jjjj</td></tr>
+          <tr><td>Eind datum</td><td><input onfocus="datum()" id="datum2" onkeyup="dateMask(this.id)" type="text" name="einddatum" value="[@einddatum]" placeholder="dd-mm-jjjj" /> dd-mm-jjjj</td></tr>
+          <tr><td>Begin tijd</td><td><input type="text" name="begintijd" value="[@begintijd]" placeholder="08:30" /> hh:mm Geen begintijd? Dan niets invullen</td></tr>
+          <tr><td>Eind tijd</td><td><input type="text" name="eindtijd" value="[@eindtijd]" placeholder="09:30" /> hh:mm Geen eindtijd? Dan niets invullen</td></tr>
+          <tr><td>Categorie </td><td>
+              <select name="kal_categorie">
+                <option value="kerkenraad">Kerkenraad</option>
+                <option value="kerkrentmeesters">Kerkrentmeesters</option>
+                <option value="diaconie">Diaconie</option>
+                <option value="kerkdiensten">Kerkdiensten</option>
+                <option value="gemeente actie">Gemeente actie</option>
+                <option value="gehele_gemeente">Gehele gemeente</option>
+                <option value="volwassenen">Volwassenen</option>
+                <option value="senioren">Senioren</option>
+                <option value="mannen">Mannen</option>
+                <option value="dames">Dames</option>
+                <option value="jongeren">Jongeren</option>
+                <option value="kinderen">Kinderen</option>
+                <option value="bijbelkring">Bijbelkring</option>
+                <option value="catechese">Catechese</option>
+                <option value="evangelisatie">Evangelisatie</option>
+                <option value="zending">Zending</option>
+              </select>
+            De gekozen categorie bepaald de kleur van de activiteit </td></tr>
+          <tr><td>Contact Persoon </td><td> <input id="contact" type="text" name="contactpersoon" value="[@contactp]" /></td></tr>
+          <tr><td>Telefoon </td><td><input type="text" name="telefoon" value="[@telefoon]" placeholder="0000-000000"/></td></tr>
+          <tr><td>E-mail</td><td><input id="email" type="text" name="email" value="[@email]" /> @ <input type="text" name="emailtwee" value="[@emailtwee]" /><br/>
+				e-mailadres is verplicht          
+          </td></tr>
+          <!--tr><td>Soort</td><td><input type="text" name="soort" value="[@soort]" /></td></tr-->
+          <!--tr><td>Plaatsing </td><td>
+              <select name="extern">
+                <option value="Publiceren op internet">Publiceren op internet</option>
+                <option value="Publiceren voor leden">Publiceren voor leden</option>
+                <option value="Geen Publicatie">Geen Publicatie</option>
+              </select>
+            </td></tr-->
+          <tr><td></td><td></td></tr>
+        </table>
+        <input type="hidden" name="kal_contentcel" value=""/><br/>
+        <input type="hidden" name="extern" value=""/><br/>
+        <input type="hidden" name="file" value="[@filenaam]" /><br/>
+       
+       [@page-nav]  
+       </div>
+      </form>
+    </div>
+</div>  
+
+

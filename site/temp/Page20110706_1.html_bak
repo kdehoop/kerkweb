@@ -1,0 +1,20 @@
+<h1 id="onderwerp">Activiteiten melden</h1><div id ="koptekst" class="tekst1"><p>
+	Activiteiten voor de website kun je nu zelf toevoegen</p>
+</div><a class="info" href="artikel1.html" onclick="loadXMLDoc('./index.php?content'); return false ">Meer info ...</a> <br/><div id="tekst" class="tekst1"><p>
+	Aan de website is in de bovenste menubalk een optie toegevoegd waarmee iedereen een activiteit kan toevoegen aan de activiteitenlijst.<br />
+	Het formulier kun je openen door te klikken op de tekst \\&#39;Activiteit Melden\\&#39;.</p>
+<p>
+	Elke gemelde activiteit wordt door de webredacteur gelezen en beoordeeld. Wanneer deze activiteit binnen het kader van de website past wordt de melding geplaatst.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Voordat u een activiteit aanmeld&nbsp; die in &eacute;&eacute;n van de kerkgebouwen plaats vindt, moet u wel eerst contact hebben gehad met de koster van het desbetreffende kerkgebouw.</p>
+<p>
+	Allen zij kunnen aangeven of er een ruimte beschikbaar is voor uw activiteit.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Mocht u nog vragen hebben kunt u altijd mailen naar: <a href=\"mailto:website@hervormdreeuwijk.nl\">website@hervormdreeuwijk.nl</a></p>
+<p>
+	&nbsp;</p>
+</div>

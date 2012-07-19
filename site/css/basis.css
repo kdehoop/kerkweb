@@ -1,0 +1,709 @@
+/**********************************
+  	Deze basis.css file is eigendom van actasys
+  	ontwikkeld voor web-actief sites
+  	versie 1 voor front module
+  	d.d. 01-06-2011 
+ 	*******************************/
+
+
+/** voor het toevoegen van een google font plus een regel in de header of de html file.
+* {
+    margin      : 0;
+    padding     : 0;
+	font-family: 'Didact+Gothic', arial, serif;
+	font        : 13px; 
+}
+*/
+
+
+* {
+    margin      : 0;
+    padding     : 0;
+    font        : 13px sans-serif;
+}
+
+
+body{
+    background-color   : #000043;
+	color: #3D3D3D;
+}
+
+h1 {
+    font-size: 20px;
+    color: #912519;
+	line-height: 40px;
+}
+
+h2 {
+    font-size: 15px;
+    color: #912519;
+	font-weight:bold;
+	line-height : 30px;
+}
+
+h3 {
+    font-size: 15px;
+    color: #912519;
+	font-weight: normal;
+	line-height : 30px;
+}
+
+strong{
+	font-weight:bold;
+}
+
+html, body, #bg, #bg table, #bg td {
+    height:100%;
+    width:100%;
+}
+
+.linktable{
+	width: 800px;
+}
+
+#bg {
+	height: 0;
+    z-index: 10;
+}
+
+#bg div {
+    height:200%;
+    left:-50%;
+    position: 	fixed;
+	top:-50%;
+    width:200%;	
+}
+
+#bg td {
+    text-align:center;
+    vertical-align:middle;
+}
+
+#bg img {
+    margin			:0 auto;
+    min-height		:50%;
+    min-width		:50%;
+}
+
+
+#error {
+	z-index			: 1000;
+}
+#frame{	
+    margin-left		: auto;
+    margin-right	: auto;
+    position		: relative;
+    width			: 960px;
+    z-index			: 20;
+	background-color: #fffeef;
+	background-image : url("../media/websitefotos/framebackground2.png");
+	background-repeat : repeat-y;
+	overflow : visible;
+}
+
+#home_header {
+	background-image : url("../media/websitefotos/header3.png");
+    height: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 960px;	
+
+}
+
+#slideshow1 {
+	width: 600px;
+  	height: 220px;
+    margin-left: 327px;
+    margin-top: 73px;
+    width: 600px;
+	position: absolute;
+}
+
+#content {	
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 960px;
+	overflow :auto;	
+	background-repeat : repeat-y;
+}
+
+#content_1{
+	position:relative;
+	width:520px;
+	float:left;
+	padding :20px;
+}
+
+#content_2frame{
+	margin-left: auto;
+    padding-top: 0;
+    position: relative;
+    width: 380px;
+}
+#content_2{
+        background: none repeat scroll 0 0 #ECEDE7;
+    border: 1px solid silver;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    width: 300px;
+}
+
+#content_10{
+	padding :20px;
+	width:917px;
+}
+
+#content_11{
+	position:relative;
+	width:410px;
+	float:left;
+	padding :20px;
+}
+
+#content_12{
+    margin-left: auto;
+    position: relative;
+	width:410px;
+	padding :20px;
+}
+
+#tegel1{
+    position: relative;
+}
+
+/*
+#tegel2{
+    position: relative;
+}
+*/
+
+#tekst2{
+	padding: 10px 10px 30px;
+	background-color: #ecede7;
+}
+#tegel3{
+    position: relative;
+}
+
+#tekst3{
+	padding: 10px 10px 30px;
+	background-color: #ecede7;
+}
+#tegel4{
+    position: relative;
+}
+
+#tekst4{
+	padding: 10px 10px 30px;
+	background-color: #ecede7;
+}
+
+#tegel5{
+    position: relative;
+}
+
+#tekst5{
+	padding: 10px 10px 30px;
+	background-color: #ecede7;
+}
+
+#footerpagina {
+	background-color: #57112D;
+    height			: 100px;
+    margin-left		: auto;
+    margin-right	: auto;
+    position		: relative;
+    width			: 940px;
+	float			: right;
+	padding			: 10px;
+}
+
+#blok1pagina{
+	width			: 812px;
+	margin-left		: auto;
+	margin-right	: auto;
+	padding			: 20px;
+	padding-bottom	: 50px;
+	background-color: #FFFEEF;
+}
+#blok2pagina{
+	width			: 812px;
+	margin-left		: auto;
+	margin-right	: auto;
+	padding			: 20px;
+	padding-bottom	: 50px;
+	background-color: #FFFEEF;
+}
+#messagenavigatie {
+	margin-right : 19px;
+	margin-bottom  : 50px;
+}
+#mailform1{
+	background: none repeat scroll 0 0 #ECEDE7;
+    border: 1px solid silver;
+    padding: 20px;
+    width: 552px;
+	/*background-color: #C3C3C3;*/
+}
+#mailbutton{
+    
+    background-color: #7A93A9;
+    color: #FFFFFF;
+    width: 548px;
+}
+
+.chapta{
+	margin:0 auto;
+	border: 1px; 
+	border-color : #C3C3C3; 
+	border-style: solid;
+}
+
+.mailcolom1{
+	margin-right: 22px;
+    width: 259px;
+}
+
+.mailcolom2{
+	margin-right: 22px;
+    width: 259px;
+}
+
+.mailcolom3{
+	width: 544px;
+}
+#multipage1{
+	/*
+background-image : url("../site/media/websitefotos/framebackground.png");
+*/
+}
+
+#multipage2{
+	/*
+background-image : url("../site/media/websitefotos/framebackground2.png");
+*/
+}
+/* 
+ * popup1 css
+ */
+
+#popup1{
+	position: fixed;	
+	 margin-top: -150px;
+}
+	
+#resultpopup{
+    background-color: #FFFEEF;
+    min-height:380px;
+    width: 444px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    padding: 20px;
+    border: 25px solid;
+    border-color: #78934E;
+}
+
+#eventpopup{
+   	height:370px;
+    width: 434px;
+	
+	z-index: 200;
+	position:absolute;
+	margin-left:100px; 
+}
+
+#koptekst {
+	/*background-color: #ecede7;*/
+	padding: 10px 10px 30px;
+	border-top: 1px solid Silver;
+}
+
+#tekst {
+	/*background-color: #ecede7;*/
+	padding: 10px 10px 30px;
+}
+.mlist {
+    background-color: #D5D9CD;
+    border-top: thin solid #50652d;
+    height: 25px;
+    list-style: none outside none;
+    width: 274px;
+}
+
+a.mlistd:link, a.mlistd:visited{
+	background: none repeat scroll 0 0 #D5D9CD;
+    color: #50652d;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 0 4px 1px;
+    text-decoration: none;
+	width : 260px;
+}
+	
+ a.mlistd:hover{
+	background: none repeat scroll 0 0 #bfbfbf;
+    color: #ffffff;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0 4px 1px;
+    text-decoration: none;
+	width : 265px;
+}	
+
+a.info:link, a.info:visited{
+	background-color : #50652d;
+	color: #ffffff;
+	font-size: 11px;
+    font-weight: bold;
+	padding: 2px 4px 1px;
+    text-decoration: none;
+	float :right;
+	margin-top: 5px;
+}
+
+a.info:link, a.info:hover{
+	background-color :  #7a93a9;
+	color: #ffffff;
+	font-size: 11px;
+    font-weight: bold;
+	padding: 2px 4px 1px;
+    text-decoration: none;
+	float :right;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+/* 
+ * Menu 
+ */
+
+#top_menu{
+	background-color: #57112D;
+	height: 18px;
+	width : 950px;
+	margin-top: 10px;
+	color : #ffffff;
+	position: relative;
+	padding-left: 10px;
+	
+}
+
+#top_menu li{
+	float: left;
+    margin-left: 10px;    
+}
+
+.top_link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#footerkolom1{
+	float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+
+#footerkolom2{
+	float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+
+#footerkolom3{
+	float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+
+#footerkolom4{
+	float: left;
+    margin-left: 10px;
+    width: 200px;
+}
+ul {
+	list-style: none outside none;	
+}
+
+#footerpagina  a {
+    background: url("../media/websitefotos/pijl_rechts.png") no-repeat scroll left center transparent;
+    font-family: "Myriad Web",Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding-left: 18px;
+    text-decoration: none;
+}
+
+a.footerlist:link, a.footerlist:visited{
+	background-color :  #7a93a9;
+	color: #ffffff;
+	font-size: 11px;
+    font-weight: bold;
+	padding: 2px 4px 1px;
+    text-decoration: none;	
+}
+	
+a.footerlist:link, a.footerlist:hover{	
+	color: #BCC2B4;	
+	font-size: 11px;
+	padding: 2px 4px 1px;
+    text-decoration: none;
+}
+
+/* 
+ * kalender event css
+ */
+
+.kaldefault {
+    /*background: none repeat scroll 0 0 #D5D9CD;*/
+   /* color: #50652D;*/
+    float: none;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 0 4px 1px;
+    text-decoration: none;
+    width : 770px;	
+	/*border-bottom: thin solid #50652D;*/
+	
+		
+}
+
+.kallink {
+	text-decoration: none;
+	color: #50652D;
+}
+
+.kallink:visited  {
+	color: #50652D;
+}
+
+.kaltable {
+	border:0px;
+}
+.kalblok {
+	/*background-color: #ecede7;*/
+	padding: 10px 10px 30px;
+	height: 200px;
+	overflow:auto;
+	border: 1px solid Silver;
+}
+
+.gehele_gemeente{
+	background: none repeat scroll 0 0 #93C25A;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}	
+.kerkrentmeesters {
+	background: none repeat scroll 0 0 #B88A00;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.jeugdwerk {
+	background: none repeat scroll 0 0 #8AB800;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.kringwerk {
+	background: none repeat scroll 0 0 #2EB800;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.kerkenraad {
+	background: none repeat scroll 0 0 #B82E00;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.diaconie {
+	background: none repeat scroll 0 0 #F5B800;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.kerkdiensten {
+	background: none repeat scroll 0 0 #ffa500;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.volwassenen {
+	background: none repeat scroll 0 0 #ffa500;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.senioren {
+	background: none repeat scroll 0 0 #00B88A;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.mannen {
+	background: none repeat scroll 0 0 #008AB8;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.dames {
+	background: none repeat scroll 0 0 #8A00B8;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.jongeren {
+	background: none repeat scroll 0 0 #EEB8FF;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.kinderen {
+	background: none repeat scroll 0 0 #FF906B;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.bijbelkring {
+	background: none repeat scroll 0 0 #6BDAFF;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.catechese {
+	background: none repeat scroll 0 0 #6BFF90;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.evangelisatie {
+	background: none repeat scroll 0 0 #DAFF6B;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+.zending {
+	background: none repeat scroll 0 0 #FFCBB8;
+	font-size: 10px;
+	padding : 4px;
+	thin solid #50652D;
+}
+
+
+/*
+ *  preekblok
+ * 
+ */
+
+ 
+ .preektable {
+	border:0px;
+	width: 30px;
+}
+.preekblok {
+	/*background-color: #ecede7;*/
+	padding: 10px 10px 30px;
+	
+	overflow:auto;
+}
+
+
+/*
+ * Fotoalbum
+ */
+
+ .clear{	/* the clearfix class */
+	clear:both;
+}
+
+a, a:visited {	/* a:visited is needed so it works properly in IE6 */
+	color:#BCC2B4;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{	/* the hover effect */
+	text-decoration:underline;
+}
+
+#container{	/* the main container div */
+	width:890px;
+	margin:20px auto;
+}
+
+#heading,#footer{	/* the header and the footer share some of their style rules */
+	/*background-color:#2A2A2A;*/
+	/*border:1px solid #444444;*/
+	height:20px;
+	padding:6px 0 25px 15px;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+
+#footer{	/* ..but not all */
+	height:10px;
+	margin:20px 0 20px 0;
+	padding:6px 0 11px 15px;
+}
+
+div.nomargin{	/* our special nomargin class */
+	margin-right:0px;
+}
+
+.pic{	/* divs that hold all the pictures in the gallery */
+	float:left;
+	margin:0 15px 15px 0;
+	/*border:5px solid white;*/
+	border:5px solid #912519;
+	width:200px;
+	height:250px;
+}
+
+.pic a{	/* in every .pic container there is a hyperlink exactly the size of the container */
+	width:200px;
+	height:250px;
+	text-indent:-99999px;
+	display:block;	/* don't forget that widths and heights of hyperlinks are useless without display:block */
+}
+
+/* first reset some of the elements for browser compatibility */
+body,h1,h2,h3,p,td,quote,small,form,input,ul,li,ol,label{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#kaderUpload{
+    border: 10px solid #912519;
+    padding: 23px;
+    width: 388px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: Silver;
+}

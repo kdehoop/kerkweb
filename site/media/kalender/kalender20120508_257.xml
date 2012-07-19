@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+	<onderwerp>test</onderwerp>
+	<beschrijving>test</beschrijving>
+	<locatie>ichthuskerk het ruim</locatie>
+	<begintijd></begintijd>
+	<eindtijd></eindtijd>
+	<begindatum>20120515</begindatum>
+    <einddatum>20120515</einddatum>
+	<kal_categorie>gehele_gemeente</kal_categorie>
+	<kal_contentcel>kaldefault</kal_contentcel> 
+	<contactpersoon></contactpersoon>
+	<telefoon>nb</telefoon>
+	<email>website</email>
+	<soort></soort>
+	<plaatsing></plaatsing>
+	<hits>0</hits>
+	<gemaakt></gemaakt>
+	<gemaaktop></gemaaktop>
+	<gewijzig></gewijzig>
+	<gewijzigdop></gewijzigdop>
+	<extern></extern>
+	<file>kalender20120508_257.xml</file>
+<tijd></tijd></event>

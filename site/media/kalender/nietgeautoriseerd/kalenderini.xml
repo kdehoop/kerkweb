@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kalender>
+  <filenummer>153</filenummer>
+  <event>
+    <filename>kalender20110930_1.xml</filename>
+    <startdate>2011-09-29</startdate>
+    <einddate>2011-10-10</einddate>
+  </event>
+  <event>
+    <filename>kalender201107252000_201107252200_2</filename>
+    <startdate>2011-09-29</startdate>
+    <einddate>2011-10-10</einddate>
+  </event>
+</kalender>

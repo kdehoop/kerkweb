@@ -1,0 +1,1 @@
+<h1 id="onderwerp">Samenstelling kerkenraad</h1><div id ="koptekst" class="tekst1"><p>De kerkenraadsleden en de adressen zijn als volgt:</p></div><a class="info" href="artikel1.html" onclick="loadXMLDoc('./index.php?content'); return false ">Meer info ...</a> <br/><div id="tekst" class="tekst1"><p>Artikel tekst.</p></div>

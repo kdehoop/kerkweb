@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl">
+	<head>
+	<title>Hervormd Reeuwijk</title>
+	        <meta content="" name="keywords"/>
+	        <meta http-equiv="pragma" content="no-cache" />
+		<title>hervormdreeuwijk - Welkom</title>
+		<meta content="Hervormdreeuwijk" name="description">
+		<meta content="reeuwijk, pkn, kerk, hervormd, ichthus, evangelisatie, hervormdreeuwijk" name="keywords">
+		<meta content="index, follow" name="robots">
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+			<link rel="shortcut icon" href="www.hervormdreeuwijk.nl/site/media/websitefotos/favicon.ico">
+			<!--link rel="icon" type="image/gif" href="animated_favicon1.gif"-->
+			<link type="text/css" rel="stylesheet" href="./site/css/basis.css"/>
+			<link type="text/css" rel="stylesheet" href="./site/css/jquery.lightbox-0.5.css"/>
+			<script src="./site/javascript/jquery.js" type="text/javascript"></script>
+			<script src="./site/javascript/crossslide.js" type="text/javascript"></script> <!-- http://www.serie3.info/s3slider/ -->
+			<script src="./site/javascript/jquery.lightbox-0.5.pack.js" type="text/javascript"></script> <!-- http://tutorialzine.com/2009/09/cool-jquery-gallery/ -->
+	        <script type="text/javascript" src="./site/javascript/basis.js" language="JavaScript"> </script>
+			<script> /* http://tobia.github.com/CrossSlide/*/
+			 $(function() {
+				$('#slideshow1').crossSlide({
+				  sleep: 5,
+				  fade: 2
+				}, [
+				  { src: './site/media/websitefotos/fotoshow1/1.png' },
+				  { src: './site/media/websitefotos/fotoshow1/2.png' },
+				  { src: './site/media/websitefotos/fotoshow1/3.png' },
+				  { src: './site/media/websitefotos/fotoshow1/4.png' }
+				]);
+			  });	
+			</script>
+	</head>
+	 <body>
+	 <input type="hidden" id="startflag" value="<?php echo $this->starturl; ?>" /> 
+		<a id="topfocus" href="#"></a>
+        <div id="frame">
+        	<div id="top_menu">
+        		<ul id="top_menu1">
+        			<li> <a class="top_link" href="frontpagina.html" onclick="loadXMLDoc('./index.php?module=pagina&content=frontpagina.html'); return false ">Home</a></li>
+					<li> <a class="top_link" href="contact.html"    onclick="loadXMLDoc('./index.php?content=contact.html'); return false ">Contact </a> </li>
+					<li> <a class="top_link" href="mail.php"    onclick="loadXMLDoc('./index.php?content=mail.php'); return false ">Mail </a> </li>
+					<li> <a class="top_link" href="addActiviteit.php"    onclick="loadXMLDoc('./index.php?content=addActiviteit.php'); return false ">Activiteit Melden</a> </li>
+        		</ul>
+        	</div>
+			<div id="home_header" >
+				<div id="slideshow1" >
+					<img src="./media/websitefotos/fotoshow1/1.png" />
+					<img src="./media/websitefotos/fotoshow1/2.png" />
+					<img src="./media/websitefotos/fotoshow1/3.png" />
+					<img src="./media/websitefotos/fotoshow1/4.png" />
+				</div>
+			</div>	
+            <div id="content" >
+            	<div id="popup1" class="popup1" ></div>
+            	<div id="content_body">
+		            {content}
+				</div>
+				<div id="footerpagina" >
+	              	{footer}
+	       		 </div>
+            </div>
+			
+        </div>
+        <div id="bg">
+                <div>
+                    <table id="bgtable" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>  
+                            <img style="width: 1400px; height: 1050px;"  src="../site/media/websitefotos/blauw5.jpg"> 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>  
+  
+    </body>
+</html>
